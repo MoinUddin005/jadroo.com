@@ -1,0 +1,3 @@
+const REACT_APP_NOT_SECRET_CODE=`SADfdlLnwiT1tsdgfiu98we9ewrgt7ZqQb8ycysvo5skfds@$%SHSD`
+
+export default REACT_APP_NOT_SECRET_CODE;
