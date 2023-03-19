@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import REACT_APP_NOT_SECRET_CODE from "../../token";
 import Product from "../Products/Products";
 
 const Home = () => {
@@ -9,7 +8,7 @@ const Home = () => {
   const getData = () => {
     const config = {
       headers: {
-        Authorization: REACT_APP_NOT_SECRET_CODE,
+        Authorization: import.meta.env.VITE_SOME_KEY,
       },
     };
     const { data } = axios
@@ -25,7 +24,6 @@ const Home = () => {
   useEffect(() => {
     getData();
   }, []);
-  console.log("--", Products);
   return (
     <div>
       <div className="container">
